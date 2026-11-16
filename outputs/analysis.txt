@@ -1,0 +1,5 @@
+S1: held-out MAE went from 0.84 (raw) to 0.70 (offset only) to 0.32 (offset + scale) deg C. That is 62% better than raw; scale correction adds 54% on top of offset-only and wins in 100% of 200 random splits.
+S2: held-out MAE went from 1.22 (raw) to 1.23 (offset only) to 0.71 (offset + scale) deg C. That is 42% better than raw; scale correction adds 43% on top of offset-only and wins in 100% of 200 random splits.
+S3: held-out MAE went from 2.29 (raw) to 1.98 (offset only) to 1.35 (offset + scale) deg C. That is 41% better than raw; scale correction adds 32% on top of offset-only and wins in 98% of 200 random splits.
+
+Caution: the data are SIMULATED, so these numbers show that the pipeline works, not how a real sensor behaves. A straight-line model also cannot remove curvature in a sensor's response.

@@ -1,0 +1,209 @@
+{
+  "input_rows": 300,
+  "valid_rows": 293,
+  "rejected_rows": 7,
+  "rejection_reasons": {
+    "raw reading missing or not a number": 3,
+    "reference missing or not a number": 2,
+    "raw reading outside allowed range": 2
+  },
+  "runs_used": 12,
+  "runs_dropped": 0,
+  "test_fraction": 0.3,
+  "seed": 7,
+  "heldout_results": [
+    {
+      "sensor_id": "S1",
+      "method": "raw (no correction)",
+      "n_test": 29,
+      "offset": 0.0,
+      "scale": 1.0,
+      "MAE": 0.8438,
+      "RMSE": 1.0587,
+      "max_abs_error": 1.9
+    },
+    {
+      "sensor_id": "S1",
+      "method": "offset only",
+      "n_test": 29,
+      "offset": 0.4318,
+      "scale": 1.0,
+      "MAE": 0.703,
+      "RMSE": 0.8209,
+      "max_abs_error": 1.4682
+    },
+    {
+      "sensor_id": "S1",
+      "method": "offset + scale",
+      "n_test": 29,
+      "offset": 1.9777,
+      "scale": 0.9705,
+      "MAE": 0.3225,
+      "RMSE": 0.3993,
+      "max_abs_error": 0.7948
+    },
+    {
+      "sensor_id": "S2",
+      "method": "raw (no correction)",
+      "n_test": 29,
+      "offset": 0.0,
+      "scale": 1.0,
+      "MAE": 1.2172,
+      "RMSE": 1.4253,
+      "max_abs_error": 2.56
+    },
+    {
+      "sensor_id": "S2",
+      "method": "offset only",
+      "n_test": 29,
+      "offset": 0.2348,
+      "scale": 1.0,
+      "MAE": 1.2333,
+      "RMSE": 1.4552,
+      "max_abs_error": 2.6348
+    },
+    {
+      "sensor_id": "S2",
+      "method": "offset + scale",
+      "n_test": 29,
+      "offset": -0.9617,
+      "scale": 1.0233,
+      "MAE": 0.7051,
+      "RMSE": 0.9425,
+      "max_abs_error": 2.1632
+    },
+    {
+      "sensor_id": "S3",
+      "method": "raw (no correction)",
+      "n_test": 29,
+      "offset": 0.0,
+      "scale": 1.0,
+      "MAE": 2.2934,
+      "RMSE": 2.6872,
+      "max_abs_error": 5.32
+    },
+    {
+      "sensor_id": "S3",
+      "method": "offset only",
+      "n_test": 29,
+      "offset": -1.3546,
+      "scale": 1.0,
+      "MAE": 1.9809,
+      "RMSE": 2.469,
+      "max_abs_error": 5.9046
+    },
+    {
+      "sensor_id": "S3",
+      "method": "offset + scale",
+      "n_test": 29,
+      "offset": 1.5187,
+      "scale": 0.9435,
+      "MAE": 1.3533,
+      "RMSE": 1.7096,
+      "max_abs_error": 4.2132
+    }
+  ],
+  "per_sensor_summary": [
+    {
+      "sensor_id": "S1",
+      "runs": 4,
+      "offset_mean": 1.9025,
+      "offset_std": 0.1804,
+      "scale_mean": 0.9726,
+      "scale_std": 0.0027,
+      "raw_MAE_mean": 0.8861
+    },
+    {
+      "sensor_id": "S2",
+      "runs": 4,
+      "offset_mean": -1.2442,
+      "offset_std": 0.2785,
+      "scale_mean": 1.0278,
+      "scale_std": 0.0047,
+      "raw_MAE_mean": 0.9022
+    },
+    {
+      "sensor_id": "S3",
+      "runs": 4,
+      "offset_mean": 1.5673,
+      "offset_std": 0.6954,
+      "scale_mean": 0.9433,
+      "scale_std": 0.0131,
+      "raw_MAE_mean": 2.2622
+    }
+  ],
+  "stability": {
+    "S1": {
+      "n_splits": 200,
+      "full_beats_raw": 1.0,
+      "full_beats_offset_only": 1.0,
+      "mae_full_mean": 0.4277696301659945,
+      "mae_full_std": 0.0548443260954099
+    },
+    "S2": {
+      "n_splits": 200,
+      "full_beats_raw": 0.995,
+      "full_beats_offset_only": 1.0,
+      "mae_full_mean": 0.5994724279591992,
+      "mae_full_std": 0.06922744281977453
+    },
+    "S3": {
+      "n_splits": 200,
+      "full_beats_raw": 1.0,
+      "full_beats_offset_only": 0.975,
+      "mae_full_mean": 1.353412736260638,
+      "mae_full_std": 0.17049280335934155
+    }
+  },
+  "rejected_detail": [
+    {
+      "line": 8,
+      "run_id": "S1_R1",
+      "reference": "25.0",
+      "raw": "",
+      "reason": "raw reading missing or not a number"
+    },
+    {
+      "line": 38,
+      "run_id": "S1_R2",
+      "reference": "45.8",
+      "raw": "N/A",
+      "reason": "raw reading missing or not a number"
+    },
+    {
+      "line": 85,
+      "run_id": "S1_R4",
+      "reference": "abc",
+      "raw": "33.65",
+      "reason": "reference missing or not a number"
+    },
+    {
+      "line": 104,
+      "run_id": "S2_R1",
+      "reference": "8.3",
+      "raw": "-999",
+      "reason": "raw reading outside allowed range"
+    },
+    {
+      "line": 171,
+      "run_id": "S2_R3",
+      "reference": "",
+      "raw": "80.49",
+      "reason": "reference missing or not a number"
+    },
+    {
+      "line": 231,
+      "run_id": "S3_R2",
+      "reference": "16.7",
+      "raw": "480",
+      "reason": "raw reading outside allowed range"
+    },
+    {
+      "line": 291,
+      "run_id": "S3_R4",
+      "reference": "58.3",
+      "raw": "nan",
+      "reason": "raw reading missing or not a number"
+    }
+  ]
+}

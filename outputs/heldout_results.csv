@@ -1,0 +1,10 @@
+sensor_id,method,n_test,offset,scale,MAE,RMSE,max_abs_error
+S1,raw (no correction),29,0.0,1.0,0.8438,1.0587,1.9
+S1,offset only,29,0.4318,1.0,0.703,0.8209,1.4682
+S1,offset + scale,29,1.9777,0.9705,0.3225,0.3993,0.7948
+S2,raw (no correction),29,0.0,1.0,1.2172,1.4253,2.56
+S2,offset only,29,0.2348,1.0,1.2333,1.4552,2.6348
+S2,offset + scale,29,-0.9617,1.0233,0.7051,0.9425,2.1632
+S3,raw (no correction),29,0.0,1.0,2.2934,2.6872,5.32
+S3,offset only,29,-1.3546,1.0,1.9809,2.469,5.9046
+S3,offset + scale,29,1.5187,0.9435,1.3533,1.7096,4.2132
