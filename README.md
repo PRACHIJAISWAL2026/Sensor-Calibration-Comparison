@@ -139,6 +139,3 @@ The full written analysis is in `outputs/analysis.txt` and in the PDF report.
 | BL5 evaluate | three-method comparison + 200-split stability check |
 | BL6 create | whole repo, reproducible with two commands (`generate_data.py`, `main.py`) |
 
-## Team
-
-See `CONTRIBUTIONS.md`.
